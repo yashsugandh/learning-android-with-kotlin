@@ -21,6 +21,8 @@ fun main(args: Array<String>) {
 // There are no static methods
 // Classes are final by default unless marked open
 // The fields must also be marked as open
+//There are no such things as fields in Kotlin there are only properties
+
 
 //Declaration of classes
 
@@ -47,7 +49,7 @@ class Customer1(customerName: String) {/*...*/ }
 //The primary constructor cannot contain any code.
 // Initialization code can be placed in initializer blocks, which are prefixed with the init keyword.
 
-class Person(val name: String, var weight: Long, var height: Long) {
+data class Person(val name: String, var weight: Long, var height: Long) {
     init {
 
         // Regex that matches for a number any place

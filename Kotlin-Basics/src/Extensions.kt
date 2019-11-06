@@ -18,9 +18,23 @@ fun main(args: Array<String>) {
     var arrayList = arrayListOf(5, 4, 3, 2, 1)
     println("The middle element of ArrayList $arrayList is ${arrayList.midElement()}")
 
+    //Another example
+    val greet = "Hello"
+
+    fun String.shout() = toUpperCase()
+
+    fun String.greet(name: String) {
+        //The string that called the method can be accessed using the keyword this
+
+        println("$this $name")
+    }
+
+    println(greet.shout())
+    greet.greet("Yash")
+
     //Extension Properties
 
-    var listWithExtendedProp  = listOf(1,3,5,6,7)
+    var listWithExtendedProp = listOf(1, 3, 5, 6, 7)
 
 }
 
