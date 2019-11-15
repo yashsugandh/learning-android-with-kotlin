@@ -41,7 +41,10 @@ fun main() {
     vehicleMap["Type"] = "2-wheeler"
     vehicleMap["Price"] = "85000"
 
+    //Only using values from the map
     vehicleMap.mapValues { (_, value): Map.Entry<String, String> -> println("value = $value") }
 
+    //Using the entry from the map
     vehicleMap.mapValues { entry -> println("entry = $entry") }
+
 }
